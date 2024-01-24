@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c9924fbb1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Canoa Café</title>
+</head>
+<body onload="carrosel()">
+    <!--------------------------------------CONTATOS, LOGOMARCA E FRASES-------------------------------->
+    <header>
+        <div id="contatos">
+            <ul>
+                <li><a href="https://www.google.com/maps/place/R.+Praia+Canoa+Quebrada,+1+-+Tarum%C3%A3,+Manaus+-+AM/@-3.001751,-60.0440408,16z/data=!4m5!3m4!1s0x926c17743ce043b7:0xa50ec2661da15f0a!8m2!3d-3.001751!4d-60.0440408" target="_blank"><i class="fa-solid fa-location-dot"></i></a></li>
+                <li><a href="https://www.instagram.com/canoacafeam?igsh=eDNlNGd5enp4eWlr" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://wa.me/92984622165" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+            </ul>
+        </div>
+
+        <div id="logo_frases">
+            <div id="logo">
+                <img alt="Logomarca" id="imgs">
+            </div>
+        </div>
+
+        <div id="opcoes">
+            <p onclick="mostra_op1()" id="o1" class="option"><strong>SANDUÍCHES</strong></p>
+            <P onclick="mostra_op2()" id="o2" class="option"><strong>TAPIOCAS</strong></P>
+            <p onclick="mostra_op3()" id="o3" class="option"><strong>DIVERSOS</strong></p>
+            <p onclick="mostra_op4()" id="o4" class="option"><strong>BEBIDAS</strong></p>
+            <p onclick="mostra_op5()" id="o5" class="option"><strong>SUCOS</strong></p>
+            <p onclick="mostra_op6()" id="o6" class="option"><strong>REFRIGERANTES</strong></p>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    
+    <main>
+    <!-------------------------------------------ITENS DO CARDÁPIO-------------------------------------------->
+    <p id="contador" style="display: none;">0</p>
+    
+    <div id="todas-opcoes">
+        <!--OPÇÕES DE SANDUICHES-->
+        <div class="opcao" id="op1">
+            <div class="img-item" id="sanduiche-img">
+                <img src="imagens/sanduiche.png" alt="Sanduiche">
+                <h1>SANDUÍCHES</h1>
+            </div>
+                        
+            <div class="item"><p>1. Pão com Manteiga</p> <p>R$03,00</p> </div>
+            <div class="item"><p>2. Pão com Queijo</p> <p>R$08,00</p> </div>
+            <div class="item"><p>3. Pão com Ovo</p> <p>R$07,00</p> </div>
+            <div class="item"><p>4. Pão com Presunto</p> <p>R$06,00</p> </div>
+            <div class="item"><p>5. Pão com Ovo e Queijo</p> <p>R$10,00</p> </div>
+            <div class="item"><p>6. Pão com Presunto e Queijo</p> <p>R$10,00</p> </div>
+            <div class="item"><p>7. Pão com Presunto, Queijo e Ovo</p> <p>R$10,00</p> </div>
+            <div class="item"><p>8. Pão com Banana</p> <p>R$08,00</p> </div>
+            <div class="item"><p>9. Pão com Banana e Queijo</p> <p>R$10,00</p> </div>
+            <div class="item"><p>10. Pão com Tucumã</p> <p>R$08,00</p> </div>
+            <div class="item"><p>11. Pão com Tucumã e Banana</p> <p>R$10,00</p> </div>
+            <div class="item"><p>12. Pão com Tucumã e Queijo</p> <p>R$12,00</p> </div>
+            <div class="item"><p>13. Pão com Tucumã e Ovo</p> <p>R$10,00</p> </div>
+            <div class="item"><p>14. Pão com Tucumã, Ovo e Queijo</p> <p>R$13,00</p> </div>
+            <div class="item"><p>15. Pão com Carne</p> <p>R$10,00</p> </div>
+            <div class="item"><p>16. Pão com Carne e Queijo</p> <p>R$15,00</p> </div>
+            <div class="item"><p>17. Pão com Carne e Banana</p> <p>R$15,00</p> </div>
+            <div class="item"><p>18. Pão com Carne e Tucumã</p> <p>R$15,00</p> </div>
+            <div class="item"><p>19. Pão com Carne e Ovo</p> <p>R$13,00</p> </div>
+            <div class="item"><p>20. X-Caboquinho - Tucumã, Queijo<br> e Banana</p> <p>R$14,00</p> </div>
+            <div class="item"><p>21. Caboquinho Canoa - Tucumã, Queijo, Banana, Ovo e Presunto</p> <p>R$18,00</p> </div>
+        </div>
+
+
+
+
+        <!--OPÇÕES DE TAPIOCAS-->
+        <div class="opcao" id="op2">
+            <div class="img-item" id="tapioca-img">
+                <img src="imagens/tapioca.png" alt="tAPIOCA">
+                <h1>TAPIOCAS</h1>
+            </div>
+            
+            <div class="uma_duas_pessaos">
+                <div>
+                    <i class="fa-solid fa-person"></i>   
+                    <div style="display: flex;">
+                        <i class="fa-solid fa-person"></i>
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item"><p>1. Tapioca C/S Manteiga</p> <div><p>R$04,00</p><p>R$08,00</p></div> </div>
+            <div class="item"><p>2. Tapioca Mista (Queijo e Presunto)</p> <div><p>R$10,00</p><p>R$20,00</p></div> </div>
+            <div class="item"><p>3. Tapioca com Queijo</p> <div><p>R$08,00</p><p>R$16,00</p></div> </div>
+            <div class="item"><p>4. Tapioca com Ovo</p> <div><p>R$08,00</p><p>R$16,00</p></div> </div>
+            <div class="item"><p>5. Tapioca com Ovo e Queijo</p> <div><p>R$10,00</p><p>R$20,00</p></div> </div>
+            <div class="item"><p>6. Tapioca com Carne</p> <div><p>R$10,00</p><p>R$20,00</p></div> </div>
+            <div class="item"><p>7. Tapioca com Carne e Queijo</p> <div><p>R$12,00</p><p>R$24,00</p></div> </div>
+            <div class="item"><p>8. Tapioca com Carne e Ovo</p> <div><p>R$12,00</p><p>R$24,00</p></div> </div>
+            <div class="item"><p>9. Tapioca com Carne e Queijo</p> <div><p>R$12,00</p><p>R$24,00</p></div> </div>
+            <div class="item"><p>10. Tapioca com Carne, Queijo e Ovo</p> <div><p>R$15,00</p><p>R$30,00</p></div> </div>
+            <div class="item"><p>11. Tapioca com Banana</p> <div><p>R$10,00</p><p>R$20,00</p></div> </div>
+            <div class="item"><p>12. Tapioca com Banana e Queijo</p> <div><p>R$12,00</p><p>R$24,00</p></div> </div>
+            <div class="item"><p>13. Tapioca com Tucumã</p> <div><p>R$10,00</p><p>R$20,00</p></div> </div>
+            <div class="item"><p>14. Tapioca com Tucumã e Queijo</p> <div><p>R$12,00</p><p>R$24,00</p></div> </div>
+            <div class="item"><p>15. Tapioca Caboquinho</p> <div><p>R$15,00</p><p>R$30,00</p></div> </div>
+            <div class="item"><p>16. Tapioca Canoa</p> <div><p>R$18,00</p><p>R$35,00</p></div> </div>
+        </div>
+        
+        
+
+
+        <!--OPÇÕES DE DIVERSOS-->
+        <div class="opcao" id="op3">
+            <div class="img-item" id="diversos-img">
+                <img src="imagens/bolo-milho.png" alt="Diversos">
+                <h1>DIVERSOS</h1>
+            </div>
+                        
+            <div class="item"><p>1. Cuzcuz Básico</p> <p>R$05,00</p> </div>
+            <div class="item"><p>2. Cuzcuz com Queijo</p> <p>R$08,00</p> </div>
+            <div class="item"><p>3. Cuzcuz com Ovo</p> <p>R$08,00</p> </div>
+            <div class="item"><p>4. Cuzcuz com Carne</p> <p>R$10,00</p> </div>
+            <div class="item"><p>5. Cuzcuz com Carne e Ovo</p> <p>R$12,00</p> </div>
+            <div class="item"><p>6. Bolo de Milho</p> <p>R$05,00</p> </div>
+            <div class="item"><p>7. Bolo de Macaxeira</p> <p>R$05,00</p> </div>
+            <div class="item"><p>8. Bolo de Chocolate</p> <p>R$05,00</p> </div>
+            <div class="item"><p>9. Bolo de Sardinha</p> <p>R$07,00</p> </div>
+            <div class="item"><p>10. Farofa de Ovo</p> <p>R$09,00</p> </div>
+            <div class="item"><p>11. Farofa de Jabá</p> <p>R$15,00</p> </div>
+            <div class="item"><p>12. Farofa de Carne</p> <p>R$13,00</p> </div>
+        </div>
+
+
+
+
+        <!--OPÇÕES DE BEBIDAS-->
+        <div class="opcao" id="op4">
+            <div class="img-item" id="bebida-img">
+                <img src="imagens/café.png" alt="Bebidas">
+                <h1>BEBIDAS</h1>
+            </div>
+                        
+            <div class="item"><p>1. Café com / sem Leite</p> <p>R$05,00</p> </div>
+            <div class="item"><p>2. Leite</p> <p>R$05,00</p> </div>
+            <div class="item"><p>3. Achocolatado</p> <p>R$06,00</p> </div>
+            <div class="item"><p>4. Água 500 ml</p> <p>R$05,00</p> </div>
+            <div class="item"><p>5. Água 350 ml</p> <p>R$04,00</p> </div>
+        </div>
+
+
+
+
+        <!--OPÇÕES DE SUCOS-->
+        <div class="opcao" id="op5">
+            <div class="img-item" id="bebida-img">
+                <img src="imagens/suco.png" alt="Sucos" style="width: 60%!important; position: relative; left: 40px;">
+                <h1>SUCOS</h1>
+            </div>
+                        
+            <div class="item"><p>1. MARACUJÁ</p> <p>R$06,00</p> </div>
+            <div class="item"><p>2. TAPERBÁ</p> <p>R$06,00</p> </div>
+            <div class="item"><p>3. GOIABA</p> <p>R$06,00</p> </div>
+            <div class="item"><p>4. CUPUAÇÚ</p> <p>R$06,00</p> </div>
+            <div class="item" style="justify-content: center;">
+                <div>
+                    <div style="display: flex; flex-direction: column;">
+                        <p>1/2 Jarra</p>
+                        <p style="font-size: 18px;"><strong>R$12,00</strong></p>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <p>Jarra</p>
+                        <p style="font-size: 18px;"><strong>R$24,00</strong></p>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--OPÇÕES DE REFRIGERANTES-->
+        <div class="opcao" id="op6">
+            <div class="img-item" id="refri-img">
+                <img src="imagens/refri.png" alt="Refrigerantes" style="width: 60%!important;">
+                <h1>REFRIGERANTES</h1>
+            </div>
+                        
+            <div class="item"><p>1. Coca Lata</p> <p>R$05,00</p> </div>
+            <div class="item"><p>2. Fanta Lata</p> <p>R$05,00</p> </div>
+            <div class="item"><p>3. Guanará Antartica Lata</p> <p>R$05,00</p> </div>
+            <div class="item"><p>4. Pepsi Lata</p> <p>R$05,00</p> </div>
+        </div>
+    </div>
+
+
+
+
+        <div id="enviar">
+            <input type="text-area" placeholder="Digite aqui o seu pedido">
+            <a target="_blank" id="link"><button onclick="pedir()">PEDIR</button></a>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div id="rodape">
+            <div id="inf-rodape">
+                <img style="border-bottom:#ffe0c6 1px solid; padding-bottom: 7px;" src="imagens/logo-rodape.png" alt="Logomarca">
+                <div>
+                    <p style="margin-bottom: 10px;"><i class="fa-solid fa-truck"></i> <strong>(92) 98462-2165</strong></p>
+                    <p><i class="fa-brands fa-pix"></i> <strong>806.402.654-00</strong></p>
+                    <p style="font-size: 12px;">Francisco Alexandre Gomes Cavalcante</p>
+                </div>    
+            </div>
+
+            <div id="img-rodape">
+                <img id="cafe-borda" src="imagens/cafe-borda.png" alt="Café">
+            </div>
+        </div>  
+    </footer>
+
+
+
+    <script src="script.js"></script>   
+</body>
+</html>
